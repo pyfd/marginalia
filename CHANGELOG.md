@@ -13,3 +13,6 @@
   as the styled, self-contained canonical page under `published/claude-code-setup/`, served via
   GitHub Pages. Added a root landing `index.html` listing pieces and linked the piece from the
   README. dev.to becomes a mirror pointing back here via `canonical_url`. [Claude on Pixel-8]
+- Added the Cloudflare Web Analytics beacon to the canonical page so visits/clicks are measured
+  before we drive HN/dev.to traffic (JS-beacon site on hostname `pyfd.github.io`; token is public
+  by design). Rebuilt `published/claude-code-setup/index.html`. [Claude on Pixel-8]
