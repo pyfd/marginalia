@@ -9,7 +9,7 @@ finished work only.
 
 ## Published pieces
 
-_Nothing here yet — the first piece is on its way._
+- **[How I built a Claude Code system that actually knows how I work](https://pyfd.github.io/marginalia/published/claude-code-setup/)** — five months of letting Claude Code build its own tooling across a fleet of machines and several codebases: a todo database, two-tier memory, and a session routine that runs itself. ([source](published/claude-code-setup/index.html), [dev.to mirror](https://dev.to/paul_topham_pyfd))
 
 <!-- When a piece is published, add it under published/<slug>/ (final form + figures) and link it here. -->
 
