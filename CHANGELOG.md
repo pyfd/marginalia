@@ -5,6 +5,11 @@
 ---
 
 ## 21 August 2026
+- Canonical page: social-share card metadata added (`og:title/description/url/image` +
+  `twitter:card`, reusing the dev.to cover art — link previews on LinkedIn/Slack/X now show
+  a card instead of nothing) and a slim masthead (marginalia mark + wordmark linking back
+  to the index — the page previously had no route home). Deliberately NO full hero image:
+  text-first is the credibility for the HN audience. [Claude on Fam1]
 - LAUNCH DAY (part 1): dev.to mirror flipped live (`published: true` via the dashboard —
   article 4436903 → dev.to/paul_topham_pyfd). Canonical page polished for launch: DRAFT v9
   banner removed, text column widened 40→46rem for desktop reading. HN post planned for
