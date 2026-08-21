@@ -5,6 +5,11 @@
 ---
 
 ## 21 August 2026
+- Canonical page: **giscus comments** (GitHub Discussions on this repo, category Announcements,
+  pathname mapping, theme follows reader's scheme) + closing line reworked to point at them
+  ("comments are open below, or over on the demo repo") — "questions welcome" previously had
+  no landing spot on the static page. Discussions enabled via API; giscus app install pending
+  Paul's GitHub sign-in. [Claude on Fam1]
 - Canonical page: social-share card metadata added (`og:title/description/url/image` +
   `twitter:card`, reusing the dev.to cover art — link previews on LinkedIn/Slack/X now show
   a card instead of nothing) and a slim masthead (marginalia mark + wordmark linking back
