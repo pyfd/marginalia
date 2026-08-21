@@ -14,7 +14,7 @@
 *{box-sizing:border-box}
 ::selection{background:var(--sel)}
 html{-webkit-text-size-adjust:100%}
-body{max-width:40rem;margin:0 auto;padding:3rem 1.25rem 5rem;color:var(--fg);
+body{max-width:46rem;margin:0 auto;padding:3rem 1.25rem 5rem;color:var(--fg);
  background:var(--bg);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
  font:18px/1.72 Charter,'Bitstream Charter','Iowan Old Style','Palatino Linotype',Palatino,Georgia,Cambria,serif}
 h1,h2{font-family:var(--sans);font-weight:700;letter-spacing:-.021em}
@@ -62,7 +62,6 @@ figcaption{margin-top:.8em;font-size:.82rem;line-height:1.5;color:var(--muted);f
 <article>
 <h1>How I built a Claude Code system that actually knows how I work</h1>
 <p><em>Five months of letting Claude Code build its own tooling across a fleet of machines and a handful of separate codebases — a proper todo database, two-tier memory, and a session routine that runs itself.</em></p>
-<blockquote><p><strong>DRAFT v9 — feedback round 5 (Paul, 19 Aug): trimmed ~10%, plainer voice, five pull quotes, editorial restyle of the preview. Sanitised: no hostnames, IPs, or business internals. Venue: dev.to canonical + GitHub mirror. Demo repo: github.com/pyfd/self-improving-claude-code.</strong></p></blockquote>
 <hr>
 <p>Most write-ups of AI coding assistants are about a clever prompt or a plugin you can install. This one's about something slower, and I think more useful: letting the assistant build its own tooling over months, in a git repo, tuned to exactly how you work.</p>
 <p>I've been running Claude Code across a real business for the past five months. Not one codebase but a small portfolio: the oldest and gnarliest is a bike workshop's booking system — twenty years of classic ASP I wrote myself, on Windows, inevitably — and around it a separate public website, a stack of Node services that didn't exist before, a second business's system, and the assistant's own tooling. Each its own git repo, all run from the same machines: Proxmox hosts, Linux servers, a few laptops, a work desktop, and an Android phone running Claude Code in a terminal. Before Claude Code, the oldest of these had been quietly stagnating. Five months on it's been optimised, bug-fixed, and given features that had sat on the someday list for years, while the newer projects grew up beside it. Claude Code itself grew the same way — one small script at a time — into something that knows my machines, remembers its own mistakes, tracks its own work, and starts and ends every session with a single word.</p>
