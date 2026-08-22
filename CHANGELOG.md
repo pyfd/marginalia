@@ -5,11 +5,11 @@
 ---
 
 ## 22 August 2026
-- Pre-HN framing fix: standfirst + intro no longer say "letting Claude Code build its own
-  tooling" — Paul flagged the "let it" permission framing as inaccurate (he set the direction,
-  CC did the coding; a collaboration, not CC straining at a leash). Now "me and Claude Code
-  building its tooling together" / "building the assistant's tooling with it". og:description
-  updated to match. Rebuilt `published/claude-code-setup/index.html` from source. [Claude on Fam1]
+- Pre-HN framing fix (settled over two rounds with Paul): standfirst + intro reworded. "Letting
+  Claude Code build its own tooling" read as CC clamouring and Paul merely permitting; the interim
+  "building it together" overstated joint coding. Final, accurate shape: **"Five months of Claude
+  Code building its own tooling, steered by me"** / intro "having the assistant build its own
+  tooling". og:description matches. Rebuilt `published/claude-code-setup/index.html`. [Claude on Fam1]
 
 ## 21 August 2026
 - Canonical page: **giscus comments** (GitHub Discussions on this repo, category Announcements,
