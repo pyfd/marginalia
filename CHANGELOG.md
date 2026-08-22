@@ -5,6 +5,13 @@
 ---
 
 ## 22 August 2026
+- Canonical page: **self-exclusion opt-out for CF Web Analytics** (`?notrack=1`). CF Web Analytics
+  (the free JS-beacon product — all that's available on GitHub Pages, un-proxied) has **no**
+  IP/visitor filter, so the author's own visits were counting. The beacon is now injected at
+  runtime and skipped for opted-out browsers: visit `…/claude-code-setup/?notrack=1` once to
+  persist an `mg_notrack` localStorage flag, and thereafter the beacon never fires in that browser
+  (per-browser, survives across visits). Falls through and loads normally if localStorage is
+  blocked. Only the beacon block changed; page content byte-identical otherwise. [Claude on Pixel-8]
 - Pre-HN framing fix (settled over two rounds with Paul): standfirst + intro reworded. "Letting
   Claude Code build its own tooling" read as CC clamouring and Paul merely permitting; the interim
   "building it together" overstated joint coding. Final, accurate shape: **"Five months of Claude

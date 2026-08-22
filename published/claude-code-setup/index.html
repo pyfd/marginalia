@@ -425,5 +425,18 @@ figcaption{margin-top:.8em;font-size:.82rem;line-height:1.5;color:var(--muted);f
  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 })();
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "28b1bfb0d8fb4511b9730fe83cd1d437"}'></script>
+<script>
+(function(){
+  try {
+    var p = new URLSearchParams(location.search);
+    if (p.has('notrack')) localStorage.setItem('mg_notrack','1');
+    if (localStorage.getItem('mg_notrack') === '1') return;
+  } catch (e) {}
+  var s = document.createElement('script');
+  s.defer = true;
+  s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  s.setAttribute('data-cf-beacon', '{"token": "28b1bfb0d8fb4511b9730fe83cd1d437"}');
+  document.head.appendChild(s);
+})();
+</script>
 </body></html>
