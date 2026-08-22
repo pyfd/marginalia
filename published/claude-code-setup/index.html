@@ -4,7 +4,7 @@
 <title>How I built a Claude Code system that actually knows how I work</title>
 <meta property="og:type" content="article">
 <meta property="og:title" content="How I built a Claude Code system that actually knows how I work">
-<meta property="og:description" content="Five months of letting Claude Code build its own tooling across a fleet of machines and a handful of separate codebases — a proper todo database, two-tier memory, and a session routine that runs itself.">
+<meta property="og:description" content="Five months of me and Claude Code building its tooling together, across a fleet of machines and a handful of separate codebases — a proper todo database, two-tier memory, and a session routine that runs itself.">
 <meta property="og:url" content="https://pyfd.github.io/marginalia/published/claude-code-setup/">
 <meta property="og:image" content="https://raw.githubusercontent.com/pyfd/marginalia/main/img/cover.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -76,9 +76,9 @@ figcaption{margin-top:.8em;font-size:.82rem;line-height:1.5;color:var(--muted);f
 <header class="masthead"><a href="https://pyfd.github.io/marginalia/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#0b5cbd"/><line x1="13" y1="7" x2="13" y2="25" stroke="#fff" stroke-opacity=".55" stroke-width="1.4"/><g stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M16 12h9"/><path d="M16 16h9"/><path d="M16 20h6"/></g><circle cx="9" cy="12" r="1.7" fill="#f0b429"/></svg>marginalia</a></header>
 <article>
 <h1>How I built a Claude Code system that actually knows how I work</h1>
-<p><em>Five months of letting Claude Code build its own tooling across a fleet of machines and a handful of separate codebases — a proper todo database, two-tier memory, and a session routine that runs itself.</em></p>
+<p><em>Five months of me and Claude Code building its tooling together, across a fleet of machines and a handful of separate codebases — a proper todo database, two-tier memory, and a session routine that runs itself.</em></p>
 <hr>
-<p>Most write-ups of AI coding assistants are about a clever prompt or a plugin you can install. This one's about something slower, and I think more useful: letting the assistant build its own tooling over months, in a git repo, tuned to exactly how you work.</p>
+<p>Most write-ups of AI coding assistants are about a clever prompt or a plugin you can install. This one's about something slower, and I think more useful: building the assistant's tooling with it over months, in a git repo, tuned to exactly how you work.</p>
 <p>I've been running Claude Code across a real business for the past five months. Not one codebase but a small portfolio: the oldest and gnarliest is a bike workshop's booking system — twenty years of classic ASP I wrote myself, on Windows, inevitably — and around it a separate public website, a stack of Node services that didn't exist before, a second business's system, and the assistant's own tooling. Each its own git repo, all run from the same machines: Proxmox hosts, Linux servers, a few laptops, a work desktop, and an Android phone running Claude Code in a terminal. Before Claude Code, the oldest of these had been quietly stagnating. Five months on it's been optimised, bug-fixed, and given features that had sat on the someday list for years, while the newer projects grew up beside it. Claude Code itself grew the same way — one small script at a time — into something that knows my machines, remembers its own mistakes, tracks its own work, and starts and ends every session with a single word.</p>
 <p>None of that was planned. There's a stripped-down, sanitised example on GitHub — the bootstrap script, the memory layout, the todo CLI, the session hooks:</p>
 <blockquote><p><strong>▸ Demo repo: <a href="https://github.com/pyfd/self-improving-claude-code">github.com/pyfd/self-improving-claude-code</a></strong></p></blockquote>

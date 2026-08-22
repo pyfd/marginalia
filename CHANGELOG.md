@@ -4,6 +4,13 @@
 
 ---
 
+## 22 August 2026
+- Pre-HN framing fix: standfirst + intro no longer say "letting Claude Code build its own
+  tooling" — Paul flagged the "let it" permission framing as inaccurate (he set the direction,
+  CC did the coding; a collaboration, not CC straining at a leash). Now "me and Claude Code
+  building its tooling together" / "building the assistant's tooling with it". og:description
+  updated to match. Rebuilt `published/claude-code-setup/index.html` from source. [Claude on Fam1]
+
 ## 21 August 2026
 - Canonical page: **giscus comments** (GitHub Discussions on this repo, category Announcements,
   pathname mapping, theme follows reader's scheme) + closing line reworked to point at them
