@@ -4,6 +4,11 @@
 
 ---
 
+## 23 August 2026
+- **`img/avatar.jpg` added** — Paul's profile avatar (512px square crop from a Dolomites selfie,
+  supplied via Google Photos). Canonical copy for the launch identity: uploaded to Reddit
+  (`pyfd_pyfd`) and to be reused on dev.to + GitHub so all launch surfaces match. [Claude on Fam1]
+
 ## 22 August 2026
 - Canonical page: **self-exclusion opt-out for CF Web Analytics** (`?notrack=1`). CF Web Analytics
   (the free JS-beacon product — all that's available on GitHub Pages, un-proxied) has **no**
