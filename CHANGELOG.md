@@ -4,6 +4,22 @@
 
 ---
 
+## 1 September 2026
+- **Self-referencing `rel=canonical` + new `sitemap.xml`** — the page is crawlable but was
+  **not indexed**: no `robots.txt` restriction (none exists — `pyfd.github.io` has no user-root
+  site), no `meta robots`, no `X-Robots-Tag`, but nothing pointing at it either. An exact-phrase
+  search on the title returned nothing, matching the dev.to mirror's 0 views after 11 days live.
+  Two fixes: (1) `build-article-preview.py` now emits `<link rel="canonical">` on the published
+  page — `build-devto.py` already points the mirror here via `canonical_url`, but the original
+  never declared itself, leaving the mirror able to outrank it; (2) new `sitemap.xml` covering
+  the index and the article, for submission to Google Search Console, since the site had none and
+  GitHub Pages doesn't notify search engines. `robots.txt` deliberately **not** added — it only
+  works at the domain root, which belongs to a `pyfd.github.io` repo that doesn't exist, and its
+  absence already means allow-all. The rebuild was diffed against the previous published page
+  before installing: the canonical line is the only change, which also confirms the builder still
+  reproduces the live page byte-for-byte. Sitemap XML validated (namespace `sitemaps.org`,
+  plural — the singular form silently invalidates the whole file). [Claude on Fam3]
+
 ## 23 August 2026
 - **`img/avatar.jpg` added** — Paul's profile avatar (512px square crop from a Dolomites selfie,
   supplied via Google Photos). Canonical copy for the launch identity: uploaded to Reddit
