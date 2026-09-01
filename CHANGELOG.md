@@ -5,6 +5,15 @@
 ---
 
 ## 1 September 2026
+- **`meta name="description"` added** — the page had none, so search engines were left to
+  improvise a snippet from the body text. Deliberately **not** the standfirst: that runs to 213
+  characters and Google truncates around 155, which would have cut the concrete list (todo
+  database / two-tier memory / session routine) — precisely the part that earns the click. New
+  `META_DESCRIPTION` constant in `build-article-preview.py` holds a purpose-written 153-character
+  version, with a comment recording the length ceiling and the framing rule ("steered by me" —
+  Claude Code built the tooling and wrote every line, Paul set the direction; never "we built it
+  together"). Rebuild diffed against the published page before installing: the description line
+  was the only change. [Claude on Fam3]
 - **Self-referencing `rel=canonical` + new `sitemap.xml`** — the page is crawlable but was
   **not indexed**: no `robots.txt` restriction (none exists — `pyfd.github.io` has no user-root
   site), no `meta robots`, no `X-Robots-Tag`, but nothing pointing at it either. An exact-phrase
