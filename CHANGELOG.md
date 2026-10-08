@@ -5,6 +5,9 @@
 ---
 
 ## 8 October 2026
+- **Landing page: footer removed, em-dash out of the intro (Paul, 8 Oct).** The footer held only
+  "Notes in the margins. Written with, inevitably, Claude Code.", the line Paul cut from the
+  article, so the whole footer goes. The intro's em-dash becomes a colon. [Claude on Fam3]
 - **Piece 1 republished as v2, the voice rewrite (Paul approved it today).** The canonical page now
   serves v2: rewritten on 18 Sep in Paul's measured voice, cut by 10% on 8 Oct (1,894 words), with
   no em-dashes in the text or the figures (v1 had 44). Same sections, facts, figures and links;
