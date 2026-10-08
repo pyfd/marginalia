@@ -4,6 +4,14 @@
 
 ---
 
+## 8 October 2026
+- **Piece 1 republished as v2, the voice rewrite (Paul approved it today).** The canonical page now
+  serves v2: rewritten on 18 Sep in Paul's measured voice, cut by 10% on 8 Oct (1,894 words), with
+  no em-dashes in the text or the figures (v1 had 44). Same sections, facts, figures and links;
+  the sign-off line is gone. New title "How I built a Claude Code setup that knows how I work"
+  (the URL is unchanged), and the landing-page entry is updated to match. Built with
+  `build-article-preview.py` from `marginalia-drafts` (07a5020). [Claude on Fam3]
+
 ## 1 September 2026
 - **`meta name="description"` added** — the page had none, so search engines were left to
   improvise a snippet from the body text. Deliberately **not** the standfirst: that runs to 213
